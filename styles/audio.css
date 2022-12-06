@@ -1,0 +1,43 @@
+
+.audioDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.BtnCommon {
+    border: none;
+    background-color: transparent;
+    color: #d2273c;
+    outline: none;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.BtnCommon:focus {
+    outline: none;
+}
+
+.pauseBtn {
+    color: #66d3b6;
+}
+/* 
+.heroBack .texth3 {
+    margin-top: 60px;
+}
+
+.heroBack .texth3 h3 {
+    font-family: 'poppins', sans-serif;
+    font-size: 35px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.heroBack .texth3 p {
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+} */
