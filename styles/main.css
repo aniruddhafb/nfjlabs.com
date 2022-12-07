@@ -83,8 +83,47 @@ canvas {
 }
 
 .swiper {
-  width: 600px;
-  height: 300px;
+  width: 900px;
+  height: 150px;
+}
+
+.swiper-slide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 950px){
+.swiper {
+  width: 500px;
+}
+}
+@media only screen and (max-width: 550px){
+.swiper {
+  width: 300px;
+}
+}
+
+/* swiper for web3  */
+
+.swiper2 {
+  width: 900px;
+  height: 150px;
+}
+
+.swiper-slide2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 950px){
+.swiper2 {
+  width: 500px;
+}
+}
+@media only screen and (max-width: 550px){
+.swiper2 {
+  width: 300px;
+}
 }
 
 .dmodelm{
@@ -97,6 +136,44 @@ canvas {
   .dmodelm{
     position: absolute; 
     left:25%; 
+  }
+}
+
+.incubated{
+  display: flex; 
+  justify-content:space-around; 
+  align-items: center; 
+  text-align: center; 
+  margin-top: 125px;
+  width: 100%;
+}
+
+
+.incuDiv p{
+  font-family: 'Poppins'; 
+  color: white;
+  text-align: left;
+  font-size: 13px;
+}
+
+.incuDiv .tdeImg{
+  height: 50px;
+  width: auto;
+}
+
+.incuDiv .unisotImg{
+  height: 40px;
+  width: auto;
+}
+
+.incuDiv .bitsImg{
+  height: 40px;
+  width: auto;
+}
+
+@media only screen and (max-width:700px){
+  .incubated{
+    flex-wrap: wrap;
   }
 }
 

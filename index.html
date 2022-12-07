@@ -405,11 +405,11 @@
             <span class="content-portfolio__name text-indent">Gem Entities</span>
             <img class="content-portfolio__image" src="./resources/images/portfolio/gems.jpg" alt="Portfolio image" />
           </div>
-          <div class="content-portfolio__image-holder">
+          <!-- <div class="content-portfolio__image-holder">
             <span class="content-portfolio__name text-indent">Web 3 Builders</span>
             <img class="content-portfolio__image" src="./resources/images/portfolio/metaman.jpg"
               alt="Portfolio image" />
-          </div>
+          </div> -->
         </div>
         <a class="content-section__button button button--icon" target="_blank"
           href="https://heyzine.com/flip-book/5fd2af18de.html" rel="noopener">
@@ -418,23 +418,85 @@
         </a>
       </div>
       <div class="content-section section--hidden" data-page="5">
-        <div class="incubated"
-          style="display: flex; flex-direction: column; justify-content:flex-start; align-items: center; text-align: center; margin-top: 125px;">
-          <p style="font-family: 'Poppins'; color: white;">Incubated By</p>
-          <img style="width:25%" src="./resources/images/portfolio/tdefiw.png">
+        <!-- <div class="incubated">
+          <a href="https://tde.fi/" target="_blank" class="incuDiv">
+            <p>Incubated By</p>
+            <img class="tdeImg" src="./resources/images/portfolio/tdefiw.png">
+          </a>
+          <a href="https://unisot.com/" target="_blank" class="incuDiv">
+            <p>Traceability Partner</p>
+            <img class="unisotImg" src="./resources/images/portfolio/unisot.png">
+          </a>
+          <a href="https://bitscrunch.com/" target="_blank" class="incuDiv">
+            <p>Analytics Partner</p>
+            <img class="bitsImg" src="./resources/images/portfolio/bitscrunch.svg">
+          </a>
+        </div> -->
+        <h3 style="color: white; font-size: 35px;">PARTNERS</h3>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="https://tde.fi/" target="_blank" class="incuDiv">
+                <p>Incubated By</p>
+                <img class="tdeImg" src="./resources/images/portfolio/tdefiw.png">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://unisot.com/" target="_blank" class="incuDiv">
+                <p>Traceability Partner</p>
+                <img class="unisotImg" src="./resources/images/portfolio/unisot.png">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://bitscrunch.com/" target="_blank" class="incuDiv">
+                <p>Analytics Partner</p>
+                <img class="bitsImg" src="./resources/images/portfolio/bitscrunch.svg">
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
-        <!-- <div class="mediaMentions" style="margin-top:175px;">
-          <h3 style="color: white; font-size: 30px;">MEDIA MENTIONS</h3>
+
+        <div class="mediaMentions" style="margin-top:100px; font-family: 'Poppins'; ">
+          <h3 style="color: white; font-size: 35px;">MEDIA MENTIONS</h3>
           <div class="swiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">MEDIA1</div>
-              <div class="swiper-slide">MEDIA2</div>
-              <div class="swiper-slide">MEDIA3</div>
+              <div class="swiper-slide">
+                <a href="https://bitscrunch.com/" target="_blank" class="incuDiv">
+                  <img class="bitsImg" src="./resources/images/portfolio/bitscrunch.svg">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://bitscrunch.com/" target="_blank" class="incuDiv">
+                  <img class="bitsImg" src="./resources/images/portfolio/bitscrunch.svg">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://bitscrunch.com/" target="_blank" class="incuDiv">
+                  <img class="bitsImg" src="./resources/images/portfolio/bitscrunch.svg">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://bitscrunch.com/" target="_blank" class="incuDiv">
+                  <img class="bitsImg" src="./resources/images/portfolio/bitscrunch.svg">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://bitscrunch.com/" target="_blank" class="incuDiv">
+                  <img class="bitsImg" src="./resources/images/portfolio/bitscrunch.svg">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://bitscrunch.com/" target="_blank" class="incuDiv">
+                  <img class="bitsImg" src="./resources/images/portfolio/bitscrunch.svg">
+                </a>
+              </div>
             </div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
           </div>
-        </div> -->
+        </div>
       </div>
       <div class="content-section section--hidden" data-page="6">
         <h1 class="content-section__title">CONTACT US</h1>
@@ -471,27 +533,34 @@
 
   <script>
     const swiper = new Swiper('.swiper', {
-      // Optional parameters
       direction: 'horizontal',
       loop: true,
-
-      // If we need pagination
-      pagination: {
-        el: '.swiper-pagination',
+      slidesPerView: 2,
+      spaceBetween: 10,
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        600: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        970: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        }
       },
-
-      // Navigation arrows
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-
-      // And if we need scrollbar
       scrollbar: {
         el: '.swiper-scrollbar',
       },
     });
   </script>
+
   <script type="module" src="./main.js"></script>
   <script type="module" src="./audio.js"></script>
 </body>
