@@ -1,3 +1,33 @@
 .accordion-button{
     background-color: #151515;
 }
+
+.allInCont{
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.faqMain{
+    height: 100vh;
+    width: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    background-color: #151515;
+}
+
+
+.midContainer{
+    padding: 10px 40px;
+    width: 80%;
+}
+
+@media only screen and (max-width: 550px){
+    .midContainer{
+    width: 100%;
+    }
+}
