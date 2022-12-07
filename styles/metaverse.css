@@ -93,7 +93,6 @@ body {
     right: 46%;
 }
 
-
 @media only screen and (max-width:1250px) {
 
     .textArea {
@@ -107,7 +106,7 @@ body {
     }
 
     .textArea p {
-        font-size: 22px;
+        font-size: 12px;
         margin-top: 10px;
         width: 80%;
     }
@@ -153,7 +152,7 @@ body {
 @media only screen and (max-width:1200px) {
     .imageArea img {
         width: auto;
-        height: 700px;
+        height: 565px;
     }
 }
 
@@ -161,5 +160,14 @@ body {
     .imageArea img {
         width: auto;
         height: 400px;
+    }
+}
+
+@media only screen and (max-width:1441px) {
+    .textArea p {
+        font-size: 15px;
+    }
+    .imageArea img{
+        height: 765px;
     }
 }
