@@ -69,3 +69,32 @@
     transition-delay: 250ms;
     transform: scale(1.1, 1.1);
 }
+
+.iconsTops{
+    margin-top: 24px;
+}
+
+@media only screen and (max-width:700px){
+    .teamDiv{
+        margin-top: 30px;
+    }
+    .teamDiv img{
+        height: 100px;
+        width: auto;
+    }
+    .btnCustom{
+        padding: 15px 25px;
+    }
+    .hrefDesign i{
+        font-size: 40px;
+    }
+    .styleIcons {
+        margin: 15px 5px;
+    }
+    .subStyleIcons a{
+        padding: 10px 5px;
+    }
+    .iconsTops{
+        margin-top: 5px;
+    }
+}

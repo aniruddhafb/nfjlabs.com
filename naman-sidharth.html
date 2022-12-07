@@ -101,7 +101,7 @@
         <header class="fixed-content-header">
             <div class="flex flex--center">
                 <div class="burger" data-follow>
-                    <a href="index.html">
+                    <a href="index">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="34" height="34">
                             <path fill="none" d="M0 0h24v24H0z" />
                             <path
@@ -116,40 +116,8 @@
                 <button class="fixed-content-header__contact button button--primary">
                     <a href="https://heyzine.com/flip-book/5fd2af18de.html" style="color:white ;">CONCEPT PAPER</a>
                 </button>
-                <div class="audioDiv">
-                    <audio id="myAudio">
-                        <source src="./resources/images/sample.mpeg" type="audio/mpeg">
-                    </audio>
-                    <button onclick="playAudio()" type="button" class="playBtn BtnCommon" id="playBtn"><i
-                            class="ri-volume-mute-fill"></i></button>
-                    <button onclick="pauseAudio()" type="button" class="pauseBtn BtnCommon" id="pauseBtn"><i
-                            class="ri-volume-up-fill"></i></button>
-                </div>
             </div>
         </header>
-        <script>
-            var x = document.getElementById("myAudio");
-            var playBtn = document.getElementById("playBtn");
-            var pauseBtn = document.getElementById("pauseBtn");
-
-            pauseBtn.style.display = "none";
-
-            window.addEventListener('onLoad', () => {
-                x.play();
-            })
-
-            function playAudio() {
-                x.play();
-                pauseBtn.style.display = "block";
-                playBtn.style.display = "none";
-            }
-
-            function pauseAudio() {
-                x.pause();
-                pauseBtn.style.display = "none";
-                playBtn.style.display = "block";
-            }
-        </script>
 
         <!-- FOOTER -->
         <div class="fixed-content-footer">
@@ -198,7 +166,7 @@
                         <a class="hrefDesign" target="_blank" href="https://www.instagram.com/namansidharth/"><i
                                 class="ri-instagram-fill"></i></a>
                     </div>
-                    <div class="subStyleIcons" style="margin-top: 24px;">
+                    <div class="subStyleIcons iconsTops">
                         <a class="hrefDesign" target="_blank" href="tel:+918100817989"><i class="ri-phone-fill"></i></a>
                         <a class="hrefDesign" target="_blank" href="https://tttttt.me/Naman_Sidharth"><i
                                 class="ri-telegram-fill"></i></a>

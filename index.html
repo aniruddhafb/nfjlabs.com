@@ -20,6 +20,9 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -98,82 +101,27 @@
       </div>
     </div>
 
-    <!-- MAIN MENU -->
+    <!-- HAM MENU -->
     <div class="menu">
       <ul class="menu-list">
         <li class="menu-list__item" data-page="1">ABOUT US</li>
         <li class="menu-list__item" data-page="2">WHAT WE OFFER</li>
         <li class="menu-list__item" data-page="3">MEET THE TEAM</li>
-        <li class="menu-list__item" data-page="4">PORTFOLIO</li>
-        <li class="menu-list__item" data-page="5">CONTACT US</li>
-        <li class="menu-list__item" data-page="6">BACKED BY</li>
+        <li class="menu-list__item" data-page="4">ECOSYSTEM PARTNERS</li>
+        <li class="menu-list__item" data-page="5">BACKED BY</li>
+        <li class="menu-list__item">ROADMAP</li>
+        <li class="menu-list__item">BLOGS</li>
+        <li class="menu-list__item">GALLERY</li>
+        <li class="menu-list__item">FAQS</li>
+        <li class="menu-list__item" data-page="6">CONTACT US</li>
       </ul>
     </div>
     <!-- VIDEO POPUP -->
     <div class="popup" data-popup="video">
       <div class="popup__inner video__inner">
-        <iframe id="video" width="100%" height="100%" src="https://www.youtube.com/watch?v=yHfb5nNanN8"></iframe>
+        <iframe id="video" width="100%" height="100%" src="https://www.youtube.com/embed/sqXs50L1XyI"></iframe>
         <!-- If you have Youtube video or any external video, use iframe above. Otherwise use video element below; -->
         <!-- <video id="video" src="./path-to-video"></video> -->
-      </div>
-    </div>
-    <!-- OFFERS POPUP -->
-    <div class="popup" data-popup="offers">
-      <div class="popup__inner">
-        <h2 class="popup__title">The NFJ Ecosystem</h2>
-        <h2 class="popup__subtitle">Some of the things we do</h2>
-        <div class="popup__content popup__offers">
-          <div class="popup__offer">
-            <h3 class="popup__offer-title">Marketing</h3>
-            <ul>
-              <li>Facbook ads</li>
-              <li>Instagram ads</li>
-              <li>Google ads</li>
-              <li>Leaflet</li>
-            </ul>
-          </div>
-          <div class="popup__offer">
-            <h3 class="popup__offer-title">Analytics</h3>
-            <ul>
-              <li>Google Analytics</li>
-              <li>Firebase</li>
-              <li>Data science</li>
-              <li>Dashboard</li>
-            </ul>
-          </div>
-          <div class="popup__offer">
-            <h3 class="popup__offer-title">Consulting</h3>
-            <ul>
-              <li>Growth</li>
-              <li>First business</li>
-              <li>Startup</li>
-            </ul>
-          </div>
-          <div class="popup__offer">
-            <h3 class="popup__offer-title">Research</h3>
-            <ul>
-              <li>Market research</li>
-              <li>Competition reserach</li>
-              <li>Product reserach</li>
-            </ul>
-          </div>
-          <div class="popup__offer">
-            <h3 class="popup__offer-title">Developing</h3>
-            <ul>
-              <li>WEB Design</li>
-              <li>WEB apps</li>
-              <li>Mobile apps</li>
-              <li>Smart home apps</li>
-            </ul>
-          </div>
-          <div class="popup__offer">
-            <h3 class="popup__offer-title">Product growing</h3>
-            <ul>
-              <li>Influencers</li>
-              <li>Invests</li>
-            </ul>
-          </div>
-        </div>
       </div>
     </div>
     <!-- TEAM POPUP -->
@@ -189,60 +137,113 @@
             <img class="slider__arrow-icon" src="./resources/images/icons/arrow.svg" alt="Arrow icon" />
           </div>
           <div class="slider__inner" id="slider">
-            <div class="slider__item">
-              <img class="slider__item-image" src="./resources/images/persons/naman.rec.jpeg"
-                alt="naman-sidharth-nfjlabs" />
-              <div class="slider__item-content">
-                <a target="_blank" href="naman-sidharth.html" style="color:white;">
+
+            <div class="slider__item" style="margin-right: 14px ;">
+              <a href="naman-sidharth">
+                <img class="slider__item-image" style="height: 100%;" src="./resources/images/persons/naman.rect.png"
+                  alt="naman-sidharth-nfjlabs" />
+              </a>
+              <div class="slider__item-content"
+                style=" background-color: #8c52ff; width:100%; height:70px; padding: 8px 2px; text-align: center;">
+                <a target="_blank" href="naman-sidharth"
+                  style="color:white; text-align: center;  font: Poppins, sans-serif;">
                   <h2 class="slider__item-name">Naman Sidharth</h2>
-                  <h2 class="slider__item-position">Founder</h2>
+                  <h2 class="slider__item-name" style="color: white; margin-top: 3px; margin-bottom: 7px;">Founder</h2>
                 </a>
               </div>
             </div>
-            <div class="slider__item">
-              <img class="slider__item-image" src="./resources/images/persons/alessio.rec.jpeg"
-                alt="alessio-boschi-nfjlabs" />
-              <div class="slider__item-content">
-                <a target="_blank" href="alessio-boschi.html" style="color:white;">
+
+            <div class="slider__item" style="margin-right: 14px ;">
+              <a href="alessio-boschi">
+                <img class="slider__item-image" style="height: 100%;" src="./resources/images/persons/alessio.rect.png"
+                  alt="alessio-boschi-nfjlabs" />
+              </a>
+              <div class="slider__item-content"
+                style=" background-color: #8c52ff; width:100%; height:70px; padding: 8px 2px; text-align: center;">
+                <a target="_blank" href="alessio-boschi"
+                  style="color:white; text-align: center;  font: Poppins, sans-serif;">
                   <h2 class="slider__item-name">Alessio Boschi</h2>
-                  <h2 class="slider__item-position">Founding <br>Designer</h2>
+                  <h2 class="slider__item-name" style="color: white; margin-top: 3px; margin-bottom: 7px;">Founding
+                    Designer</h2>
                 </a>
               </div>
             </div>
-            <div class="slider__item">
-              <img class="slider__item-image" src="./resources/images/persons/dev.rec.jpeg"
-                alt="devchand-chodhry-nfjlabs" />
-              <div class="slider__item-content">
-                <a target="_blank" href="devchand-chodhry.html" style="color:white;">
+
+            <div class="slider__item" style="margin-right: 14px ;">
+              <a href="devchand-chodhry">
+                <img class="slider__item-image" src="./resources/images/persons/dev.rect.png"
+                  alt="devchand-chodhry-nfjlabs" />
+              </a>
+              <div class="slider__item-content"
+                style=" background-color: #8c52ff; width:100%; height:70px; padding: 8px 2px; text-align: center;">
+                <a target="_blank" href="devchand-chodhry"
+                  style="color:white; text-align: center;  font: Poppins, sans-serif;">
                   <h2 class="slider__item-name">Devchand Chodhry</h2>
-                  <h2 class="slider__item-position">Founding <br>Jeweller</h2>
+                  <h2 class="slider__item-name" style="color: white; margin-top: 3px; margin-bottom: 7px;">Fouding
+                    Jeweller</h2>
                 </a>
               </div>
             </div>
-            <div class="slider__item">
-              <img class="slider__item-image" src="./resources/images/persons/joris.rect.jpeg"
-                alt="joris-jeelof-nfjlabs" />
-              <div class="slider__item-content">
-                <a target="_blank" href="joris-jeelof.html" style="color:white;">
+
+            <div class="slider__item" style="margin-right: 14px ;">
+              <a href="joris-jeelof">
+                <img class="slider__item-image" style="height: 100%;" src="./resources/images/persons/joris.rect.png"
+                  alt="joris-jeelof-nfjlabs" />
+              </a>
+              <div class="slider__item-content"
+                style=" background-color: #8c52ff; width:100%; height:70px; padding: 8px 2px; text-align: center;">
+                <a target="_blank" href="joris-jeelof"
+                  style="color:white; text-align: center;  font: Poppins, sans-serif;">
                   <h2 class="slider__item-name">Joris Jeelof</h2>
-                  <h2 class="slider__item-position">Chief Marketing <br> Officer</h2>
+                  <h2 class="slider__item-name" style="color: white; margin-top: 3px; margin-bottom: 7px;">Chief
+                    Marketing Director</h2>
                 </a>
               </div>
             </div>
-            <!-- <div class="slider__item">
-              <img class="slider__item-image" src="./resources/images/persons/person5.jpg" alt="Team photo" />
-              <div class="slider__item-content">
-                <h2 class="slider__item-name">David Sumer</h2>
-                <h2 class="slider__item-position">PRODUCT</h2>
+
+            <!-- other member  -->
+            <div class="slider__item" style="margin-right: 14px ;">
+              <a href="#">
+                <img class="slider__item-image" src="./resources/images/persons/ronit.rect.png"
+                  alt="ronit-banerjee-nfjlabs" />
+              </a>
+              <div class="slider__item-content"
+                style=" background-color: #8c52ff; width:100%; height:70px; padding: 8px 2px; text-align: center;">
+                <a target="_blank" href="#" style="color:white; text-align: center;  font: Poppins, sans-serif;">
+                  <h2 class="slider__item-name">Ronit Banerjee</h2>
+                  <h2 class="slider__item-name" style="color: white; margin-top: 3px; margin-bottom: 7px;">UI/UX
+                    Designer</h2>
+                </a>
               </div>
             </div>
-            <div class="slider__item">
-              <img class="slider__item-image" src="./resources/images/persons/person6.jpg" alt="Team photo" />
-              <div class="slider__item-content">
-                <h2 class="slider__item-name">Jenifer Turdlo</h2>
-                <h2 class="slider__item-position">DEVELOPER</h2>
+            <div class="slider__item" style="margin-right: 14px ;">
+              <a href="#">
+                <img class="slider__item-image" style="height: 100%;" src="./resources/images/persons/shravan.rect.png"
+                  alt="shravan-andoria-nfjlabs" />
+              </a>
+              <div class="slider__item-content"
+                style=" background-color: #8c52ff; width:100%; height:70px; padding: 8px 2px; text-align: center;">
+                <a target="_blank" href="#" style="color:white; text-align: center;  font: Poppins, sans-serif;">
+                  <h2 class="slider__item-name">Shravan Andoria</h2>
+                  <h2 class="slider__item-name" style="color: white; margin-top: 3px; margin-bottom: 7px;">Developer
+                  </h2>
+                </a>
               </div>
-            </div> -->
+            </div>
+            <div class="slider__item" style="margin-right: 14px ;">
+              <a href="#">
+                <img class="slider__item-image" style="height: 100%;"
+                  src="./resources/images/persons/aniruddha.rect.png" alt="aniruddha-vikharankar-nfjlabs" />
+              </a>
+              <div class="slider__item-content"
+                style=" background-color: #8c52ff; width:100%; height:70px; padding: 8px 2px; text-align: center;">
+                <a target="_blank" href="#" style="color:white; text-align: center;  font: Poppins, sans-serif;">
+                  <h2 class="slider__item-name">Aniruddha Vikharankar</h2>
+                  <h2 class="slider__item-name" style="color: white; margin-top: 3px; margin-bottom: 7px;">Developer
+                  </h2>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -260,42 +261,10 @@
       </div>
       <div style="display: flex;">
         <button class="fixed-content-header__contact button button--primary">
-          <a href="https://heyzine.com/flip-book/5fd2af18de.html" style="color:white ;">CONCEPT PAPER</a>
+          <a href="https://heyzine.com/flip-book/5fd2af18de.html" style="color:white ;">COLLABORATE</a>
         </button>
-        <div class="audioDiv">
-          <audio id="myAudio">
-            <source src="./resources/images/sample.mpeg" type="audio/mpeg">
-          </audio>
-          <button onclick="playAudio()" type="button" class="playBtn BtnCommon" id="playBtn"><i
-              class="ri-volume-mute-fill"></i></button>
-          <button onclick="pauseAudio()" type="button" class="pauseBtn BtnCommon" id="pauseBtn"><i
-              class="ri-volume-up-fill"></i></button>
-        </div>
       </div>
     </header>
-    <script>
-      var x = document.getElementById("myAudio");
-      var playBtn = document.getElementById("playBtn");
-      var pauseBtn = document.getElementById("pauseBtn");
-
-      pauseBtn.style.display = "none";
-
-      // window.onload(){
-      //   x.play();
-      // }
-
-      function playAudio() {
-        x.play();
-        pauseBtn.style.display = "block";
-        playBtn.style.display = "none";
-      }
-
-      function pauseAudio() {
-        x.pause();
-        pauseBtn.style.display = "none";
-        playBtn.style.display = "block";
-      }
-    </script>
     <!-- PAGING -->
     <div class="fixed-content-paging">
       <div class="paging__page" data-page="0"></div>
@@ -335,11 +304,11 @@
         </div>
 
         <div class="asdsadsadsadsadsadsaddsadas">
-          <iframe style="position: absolute; left: 0; top: 45%"
+          <!-- <iframe style="position: absolute; left: 0; top: 45%"
             src='https://my.spline.design/noiselightscopy-539891ea878dd88fe218b40e471e1460/' frameborder='0'
-            width='100%' height='100%'></iframe>
-          <!-- <iframe style="position: absolute; left: 0; top: 45%" src='https://my.spline.design/untitled-9992f7932ffac9ef51d5e0c61e08809c/' frameborder='0' width='100%'
-            height='100%'></iframe> -->
+            width='100%' height='100%'></iframe> -->
+          <iframe class="dmodelm" src='https://my.spline.design/noiselightscopy-a945b1e5c7880d1999de6c5c6b145639/'
+            frameborder='0' width='100%' height='100%'></iframe>
         </div>
 
         <div class="scroll-letters">
@@ -353,7 +322,8 @@
       </div>
       <div class="content-section section--hidden" data-page="1">
         <h1 class="content-section__title">ABOUT US</h1>
-        <p class="content-section__text" style="width:1000px;">World’s First Decentralised Jewellery platform with
+        <p class="content-section__text descStyle">World’s First Decentralised Jewellery platform
+          with
           Physical Assets on the blockchain. <br><br> NFJ Ecosystem empowers artists & gem companies by creating digital
           passports against the physical assets by preserving the essence of the peice on the blockchain.
           <br><br> NFJ Ecosystem has an exclusive metaverse, and marketplace for patrons to experience the art in an
@@ -371,30 +341,27 @@
         <p class="content-section__text">Also we offer huge ammount of services. We are your one stop partner for all
           your needs. Check out all of the services we offer below.</p>
         <div class="content-services">
+
           <div class="content-services__service">
-
-
-            <img style="width:200px; margin-bottom: 50px;" src=".\resources\images\icons\Marketplace.webp">
+            <img style="width:200px; margin-bottom: 50px;" src=".\resources\images\icons\marketplace.webp">
             <span class="content-service__text"><a href="http://nfjlabs.io/" style="color: white;" target="_blank"
                 rel="noopener noreferrer">NFT Marketplace</a></span>
-
           </div>
+
           <div class="content-services__service" href="nfjlabs.io" target="_blank">
             <img style="width:165px;" src="resources\images\icons\metaverse.webp" target="_blank">
             <span class="content-service__text"><a href="https://mv.ibentos.com/rnd/artGallary2022/"
                 style="color: white;" target="_blank" rel="noopener noreferrer">Metaverse</a></span>
-
           </div>
-          <div class="content-services__service" href="nfjlabs.io">
 
+          <div class="content-services__service" href="nfjlabs.io">
             <img style="width:165px;" src="resources\images\icons\dist.webp"
               href="https://mv.ibentos.com/rnd/artGallary2022/" target="_blank">
             <span class="content-service__text">Distributed ledger</span>
-
           </div>
 
         </div>
-        <button class="content-section__button button button--secondary" id="button_offers">VIEW ALL SERVICES</button>
+        <button class="content-section__button button button--secondary" id="button_offers">KNOW MORE</button>
       </div>
       <div class="content-section section--hidden content-section--left-align" data-page="3">
         <div class="content-holder--left-align">
@@ -420,7 +387,7 @@
         </div>
       </div>
       <div class="content-section section--hidden" data-page="4">
-        <h1 class="content-section__title">COLLABORATIONS</h1>
+        <h1 class="content-section__title">ECOSYSTEM PARTNERS</h1>
         <p class="content-section__text">We have collaborated with artists & entities across the globe to create a
           democratized & inclusive jewellery ecosystem powered by the blokchain.</p>
         <div class="content-portfolio__images flex">
@@ -451,6 +418,25 @@
         </a>
       </div>
       <div class="content-section section--hidden" data-page="5">
+        <div class="incubated"
+          style="display: flex; flex-direction: column; justify-content:flex-start; align-items: center; text-align: center; margin-top: 125px;">
+          <p style="font-family: 'Poppins'; color: white;">Incubated By</p>
+          <img style="width:25%" src="./resources/images/portfolio/tdefiw.png">
+        </div>
+        <!-- <div class="mediaMentions" style="margin-top:175px;">
+          <h3 style="color: white; font-size: 30px;">MEDIA MENTIONS</h3>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">MEDIA1</div>
+              <div class="swiper-slide">MEDIA2</div>
+              <div class="swiper-slide">MEDIA3</div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div> -->
+      </div>
+      <div class="content-section section--hidden" data-page="6">
         <h1 class="content-section__title">CONTACT US</h1>
         <p class="content-section__text">We’re here to help and answer any question you might have. We look forward to
           hearing from you. You can also find us on social media below.</p>
@@ -477,14 +463,35 @@
         </div>
 
       </div>
-      <div class="content-section section--hidden" data-page="6">
-        <p style="font-family: 'Poppins'; color: white;">Backed By</p>
-        <img style="width:25%" src="./resources/images/portfolio/TDefi-white.png">
-      </div>
+
     </div>
 
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
+  <script>
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+  </script>
   <script type="module" src="./main.js"></script>
   <script type="module" src="./audio.js"></script>
 </body>
