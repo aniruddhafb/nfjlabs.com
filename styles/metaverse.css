@@ -34,6 +34,7 @@ body {
     background-origin: content-box;
     background-size: cover;
     min-height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,33 +65,38 @@ body {
 .imageArea {
     margin-top: 60px;
     margin-bottom: 80px;
+    width: 75%;
 }
 
 .imageArea img {
-    width: auto;
-    height: 900px;
+    width: 100%;
+    height: auto;
 }
 
-.customBtns i {
+.secondContainer {
+    position: relative;
+}
+
+.secondContainer i {
     color: white;
     font-size: 45px;
     text-decoration: none;
 }
 
-.customBtns a {
+.secondContainer a {
     text-decoration: none;
 }
 
-.customBtns .prevBtn {
+.secondContainer .prevBtn {
     position: absolute;
-    bottom: 5%;
-    right: 51.5%;
+    bottom: 3%;
+    left: -6%;
 }
 
-.customBtns .nxtBtn {
+.secondContainer .nxtBtn {
     position: absolute;
-    bottom: 5%;
-    right: 46%;
+    bottom: 3%;
+    right: 94%;
 }
 
 @media only screen and (max-width:1250px) {
@@ -114,9 +120,7 @@ body {
 
 @media only screen and (max-width:850px) {
 
-    .customBtns {
-        display: none;
-    }
+
 
     .homeIcon {
         display: none;
@@ -135,39 +139,35 @@ body {
         height: 100%;
     }
 
-    .customBtns .prevBtn {
-        position: absolute;
-        bottom: -20%;
-        right: 51.5%;
+    .secondContainer .prevBtn {
+        display: none;
     }
 
-    .customBtns .nxtBtn {
-        position: absolute;
-        bottom: -20%;
-        right: 46%;
+    .secondContainer .nxtBtn {
+        display: none;
+
     }
 
 }
 
-@media only screen and (max-width:1200px) {
-    .imageArea img {
-        width: auto;
-        height: 565px;
-    }
-}
-
-@media only screen and (max-width:600px) {
-    .imageArea img {
-        width: auto;
-        height: 400px;
-    }
-}
 
 @media only screen and (max-width:1441px) {
     .textArea p {
         font-size: 15px;
     }
-    .imageArea img{
-        height: 765px;
+}
+
+
+@media only screen and (max-width:1650px) {
+    .secondContainer .prevBtn {
+        position: absolute;
+        bottom: 3%;
+        left: -8%;
+    }
+
+    .secondContainer .nxtBtn {
+        position: absolute;
+        bottom: 3%;
+        right: 92%;
     }
 }
