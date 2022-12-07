@@ -280,6 +280,13 @@ canvas {
   padding: 0 20px;
   -webkit-tap-highlight-color: transparent;
 }
+
+@media only screen and (max-width: 800px){
+.menu-list__item {
+  font: 200 20px Poppins, sans-serif;
+}
+
+}
 .menu-list__item::before,
 .menu-list__item::after {
   position: absolute;
