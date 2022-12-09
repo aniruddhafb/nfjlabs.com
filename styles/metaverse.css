@@ -48,6 +48,8 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px 30px;
+    height: 80%;
+    width: 100%;
 }
 
 .textArea h1 {
@@ -75,6 +77,7 @@ body {
 
 .secondContainer {
     position: relative;
+    width: 50%;
 }
 
 .secondContainer i {
