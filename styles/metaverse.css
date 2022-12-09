@@ -119,9 +119,6 @@ body {
 }
 
 @media only screen and (max-width:850px) {
-
-
-
     .homeIcon {
         display: none;
     }
@@ -164,7 +161,7 @@ body {
         bottom: 3%;
         left: -8%;
     }
-
+    
     .secondContainer .nxtBtn {
         position: absolute;
         bottom: 3%;

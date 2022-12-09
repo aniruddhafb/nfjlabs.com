@@ -101,6 +101,13 @@
       pointer-events: initial;
     }
   }
+
+  @media only screen and (max-width: 321px){
+      #content-heading {
+        width: 50px;
+      }
+  }
+
   
   .-box1 { grid-area: -b-uno;}
   .-box2 { grid-area: -b-dos;}

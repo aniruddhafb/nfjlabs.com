@@ -1,292 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Gallery - NFJLabs</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap"
-		rel="stylesheet">
-	<link rel="icon" type="image/png" href="./resources/images/fav.ico" />
-	<link rel="stylesheet" href="./styles/gallery.css">
-	<!-- <link type="text/css" rel="stylesheet" href="./styles/main.css" /> -->
-	<!-- <link type="text/css" rel="stylesheet" href="./styles/slider.css" />
-	<link type="text/css" rel="stylesheet" href="./styles/components.css" />
-	<link type="text/css" rel="stylesheet" href="./styles/audio.css" />
-	<link type="text/css" rel="stylesheet" href="./styles/team.css" />
-	<link type="text/css" rel="stylesheet" href="./styles/loader.css" /> -->
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
 
-	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-</head>
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
 
-<body>
-	<div>
+      body {
+        background: #fff;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
 
-		<div id="CONT-GEN">
-			<div class="resize-cont-gen" style="font-family: poppins, sans-serif;">
-				<h1 style="text-align: center; color: white; margin-bottom: 16px; font-family: poppins, sans-serif;">NFJ
-					Labs Gallery </h1>
-				<p style="text-align: center; color: #bdbdbd; margin-bottom: 24px;">Lorem ipsum dolor sit amet
-					consectetur
-					adipisicing elit. Quasi minima excepturi illo. Vitae, quae eum.</p>
-				<div class="cont-cajas3d">
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
 
-					<div class="-cont-caja3d -box1">
-						<div class="box-caja3d" style="animation-delay: -4.23234s;">
-							<div class="cond-caja3d -caja-1">
-								<div class="-caja3d">
-									<img src="./resources/images/img1.png" alt="" height="100px" width="100px">
-								</div>
-							</div>
-							<div class="cond-caja3d -caja-2">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-							<div class="cond-caja3d -caja-3">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-							<div class="cond-caja3d -caja-4">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-						</div>
-					</div>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-					<div class="-cont-caja3d -box2">
-						<div class="box-caja3d" style="animation-delay: -4.37689s;">
-							<div class="cond-caja3d -caja-1">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-							<div class="cond-caja3d -caja-2">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-							<div class="cond-caja3d -caja-3">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-							<div class="cond-caja3d -caja-4">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-						</div>
-					</div>
+      .swiper {
+        width: 240px;
+        height: 320px;
+      }
 
-					<div class="-cont-caja3d -box3">
-						<div class="box-caja3d" style="animation-delay: -6.03085s;">
-							<div class="cond-caja3d -caja-1">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-							<div class="cond-caja3d -caja-2">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-							<div class="cond-caja3d -caja-3">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-							<div class="cond-caja3d -caja-4">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-						</div>
-					</div>
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 18px;
+        font-size: 22px;
+        font-weight: bold;
+        color: #fff;
+      }
 
-					<div class="-cont-caja3d -box4">
-						<div class="box-caja3d" style="animation-delay: -12.0432s;">
-							<div class="cond-caja3d -caja-1">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-							<div class="cond-caja3d -caja-2">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-							<div class="cond-caja3d -caja-3">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-							<div class="cond-caja3d -caja-4">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-						</div>
-					</div>
+      .swiper-slide:nth-child(1n) {
+        background-color: rgb(206, 17, 17);
+      }
 
-					<div class="-cont-caja3d -box5">
-						<div class="box-caja3d" style="animation-delay: -11.478s;">
-							<div class="cond-caja3d -caja-1">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-							<div class="cond-caja3d -caja-2">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-							<div class="cond-caja3d -caja-3">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-							<div class="cond-caja3d -caja-4">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-						</div>
-					</div>
+      .swiper-slide:nth-child(2n) {
+        background-color: rgb(0, 140, 255);
+      }
 
-					<div class="-cont-caja3d -box6">
-						<div class="box-caja3d" style="animation-delay: -12.6021s;">
-							<div class="cond-caja3d -caja-1">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-							<div class="cond-caja3d -caja-2">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-							<div class="cond-caja3d -caja-3">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-							<div class="cond-caja3d -caja-4">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-						</div>
-					</div>
+      .swiper-slide:nth-child(3n) {
+        background-color: rgb(10, 184, 111);
+      }
 
-					<div class="-cont-caja3d -box7">
-						<div class="box-caja3d" style="animation-delay: -13.0611s;">
-							<div class="cond-caja3d -caja-1">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-							<div class="cond-caja3d -caja-2">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-							<div class="cond-caja3d -caja-3">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-							<div class="cond-caja3d -caja-4">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-						</div>
-					</div>
+      .swiper-slide:nth-child(4n) {
+        background-color: rgb(211, 122, 7);
+      }
 
-					<div class="-cont-caja3d -box8">
-						<div class="box-caja3d" style="animation-delay: -11.0782s;">
-							<div class="cond-caja3d -caja-1">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-							<div class="cond-caja3d -caja-2">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-							<div class="cond-caja3d -caja-3">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-							<div class="cond-caja3d -caja-4">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-						</div>
-					</div>
+      .swiper-slide:nth-child(5n) {
+        background-color: rgb(118, 163, 12);
+      }
 
-					<div class="-cont-caja3d -box9">
-						<div class="box-caja3d" style="animation-delay: -7.82807s;">
-							<div class="cond-caja3d -caja-1">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-							<div class="cond-caja3d -caja-2">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-							<div class="cond-caja3d -caja-3">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-							<div class="cond-caja3d -caja-4">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-						</div>
-					</div>
+      .swiper-slide:nth-child(6n) {
+        background-color: rgb(180, 10, 47);
+      }
 
-					<div class="-cont-caja3d -box10">
-						<div class="box-caja3d" style="animation-delay: -8.67957s;">
-							<div class="cond-caja3d -caja-1">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-							<div class="cond-caja3d -caja-2">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-							<div class="cond-caja3d -caja-3">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-							<div class="cond-caja3d -caja-4">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-						</div>
-					</div>
+      .swiper-slide:nth-child(7n) {
+        background-color: rgb(35, 99, 19);
+      }
 
-					<div class="-cont-caja3d -box11">
-						<div class="box-caja3d" style="animation-delay: -13.5758s;">
-							<div class="cond-caja3d -caja-1">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-							<div class="cond-caja3d -caja-2">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-							<div class="cond-caja3d -caja-3">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-							<div class="cond-caja3d -caja-4">
-								<div class="-caja3d"><img src="./resources/images/img1.png" alt="" height="100px"
-										width="100px"></div>
-							</div>
-						</div>
-					</div>
+      .swiper-slide:nth-child(8n) {
+        background-color: rgb(0, 68, 255);
+      }
 
-				</div>
-			</div>
-		</div>
+      .swiper-slide:nth-child(9n) {
+        background-color: rgb(218, 12, 218);
+      }
 
+      .swiper-slide:nth-child(10n) {
+        background-color: rgb(54, 94, 77);
+      }
+    </style>
+  </head>
 
-		<div class="homeIcon" style="position: absolute; top:6%; left: 5%;" data-follow>
-			<a href="index">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="34" height="34">
-					<path fill="none" d="M0 0h24v24H0z" />
-					<path
-						d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8zm0-9h4v2h-4v3l-4-4 4-4v3z"
-						fill="rgba(255,255,255,1)" />
-				</svg>
-			</a>
-		</div>
+  <body style="background-color: #151515;">
+    <!-- Swiper -->
+	<div id="swiper-container" style="display: block; color: white; text-align: center;">
+	<div id="content-heading" >
+		<h1 >NFJ Labs Gallery</h1>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat error laboriosam ut possimus perferendis sunt.</p>
+	</div>
+    <div class="swiper mySwiper" id="content-card">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><video width="320" height="240" ><source src="https://www.youtube.com/embed/iwiSv0bwuJE" type="video/mp4"></video></div>
+        <div class="swiper-slide"><img src="./resources/images/marketplace.png" alt=""></div>
+        <div class="swiper-slide"><img src="./resources/images/metaverse.png" alt=""></div>
+        <div class="swiper-slide"><img src="./resources/images/plane.gif" alt=""></div>
+        <div class="swiper-slide"><img src="./resources/images/icons/necklace.png" alt=""></div>
+        <!-- <div class="swiper-slide"><img src="./resources/images/bg.webp" alt=""></div>
+        <div class="swiper-slide"><img src="./resources/images/bg.webp" alt=""></div>
+        <div class="swiper-slide"><img src="./resources/images/bg.webp" alt=""></div>
+        <div class="swiper-slide"><img src="./resources/images/bg.webp" alt=""></div>
+        <div class="swiper-slide"><img src="./resources/images/bg.webp" alt=""></div> -->
+		
+      </div>
+    </div>
 	</div>
 
-	<script src="./gallery.js"></script>
-	<script type="module" src="./team.js"></script>
-	<script type="module" src="./audio.js"></script>
-</body>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+      });
+    </script>
+  </body>
 </html>
