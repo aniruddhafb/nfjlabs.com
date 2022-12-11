@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://nfjlabs.com/sitemap.xml

@@ -1144,13 +1144,22 @@ iframe {
 
 .descStyle {
   width: 1000px;
+  font-size: 18px;
 }
+
 
 @media only screen and (max-width:700px) {
   .descStyle {
     width: 350px;
+    font-size: 12px;
   }
 }
+
+/* @media only screen and (max-width:450px) {
+  .descStyle {
+    font-size: 10px;
+  }
+} */
 
 /* Minimum device height; */
 @media only screen and (max-height: 450px) {

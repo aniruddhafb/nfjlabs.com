@@ -1,4 +1,4 @@
-.teamDiv{
+.teamDiv {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,14 +6,15 @@
     margin-top: 100px;
 }
 
-.teamDiv img{
+.teamDiv img {
     height: 300px;
     width: auto;
 }
 
-.spanChn{
+.spanChn {
     color: white;
     font: 400 20px Poppins, sans-serif;
+    margin-bottom: 12px;
 }
 
 .styleIcons {
@@ -32,30 +33,30 @@
     outline: none;
 }
 
-.subStyleIcons{
+.subStyleIcons {
     margin: 10px 5px;
 }
 
-.subStyleIcons a{
+.subStyleIcons a {
     padding: 20px 10px;
 }
 
-.hrefDesign{
+.hrefDesign {
     text-decoration: none;
     margin: 5px 15px;
 }
 
 
-.hrefDesign i{
+.hrefDesign i {
     font-size: 48px;
     color: white;
 }
 
-.hrefDesign i:hover{
+.hrefDesign i:hover {
     color: #8c52ff;
 }
 
-.btnCustom{
+.btnCustom {
     padding: 25px 35px;
     border-radius: 100px;
     text-align: center;
@@ -63,38 +64,50 @@
     font-weight: 700;
     background-color: #8c52ff;
     border: none;
-    
+
 }
-.btnCustom:hover{
+
+.btnCustom:hover {
     transition-delay: 250ms;
     transform: scale(1.1, 1.1);
 }
 
-.iconsTops{
+.iconsTops {
     margin-top: 24px;
 }
 
-@media only screen and (max-width:700px){
-    .teamDiv{
+@media only screen and (max-width:700px) {
+    .teamDiv {
         margin-top: 30px;
     }
-    .teamDiv img{
+
+    .teamDiv img {
         height: 100px;
         width: auto;
     }
-    .btnCustom{
+
+    .btnCustom {
         padding: 15px 25px;
     }
-    .hrefDesign i{
-        font-size: 40px;
+
+    .hrefDesign i {
+        font-size: 35px;
     }
+
     .styleIcons {
         margin: 15px 5px;
+        margin-top: 25px;
     }
-    .subStyleIcons a{
+
+    .subStyleIcons {
+        margin: 5px 3px;
+    }
+
+    .subStyleIcons a {
         padding: 10px 5px;
     }
-    .iconsTops{
+
+    .iconsTops {
         margin-top: 5px;
     }
 }

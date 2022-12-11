@@ -1,146 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Swiper demo</title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
-    />
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
 
-    <!-- Demo styles -->
-    <style>
-      html,
-      body {
-        position: relative;
-        height: 100%;
-      }
+<head>
+	<meta charset="utf-8" />
+	<title>Gallery - NFJlabs</title>
+	<link rel="icon" type="image/png" href="./resources/images/fav.ico" />
+	<meta name="description" content="Gallery for nfjlabs, explore images and videos of the latest events" />
+	<meta name="keywords"
+		content="nfjlabs, artistic jeweller, naman sidharth, nfj labs, non fungible jewellery, blockchain jewellery, jewellery nfts, crypto jeweller, katerina terez, alessio boschi" />
+	<meta name="theme-color" content="#141414" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="./styles/gallery.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap"
+		rel="stylesheet">
+</head>
 
-      body {
-        background: #eee;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        color: #000;
-        margin: 0;
-        padding: 0;
-      }
-
-      body {
-        background: #fff;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        color: #000;
-        margin: 0;
-        padding: 0;
-      }
-
-      html,
-      body {
-        position: relative;
-        height: 100%;
-      }
-
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .swiper {
-        width: 240px;
-        height: 320px;
-      }
-
-      .swiper-slide {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 18px;
-        font-size: 22px;
-        font-weight: bold;
-        color: #fff;
-      }
-
-      .swiper-slide:nth-child(1n) {
-        background-color: rgb(206, 17, 17);
-      }
-
-      .swiper-slide:nth-child(2n) {
-        background-color: rgb(0, 140, 255);
-      }
-
-      .swiper-slide:nth-child(3n) {
-        background-color: rgb(10, 184, 111);
-      }
-
-      .swiper-slide:nth-child(4n) {
-        background-color: rgb(211, 122, 7);
-      }
-
-      .swiper-slide:nth-child(5n) {
-        background-color: rgb(118, 163, 12);
-      }
-
-      .swiper-slide:nth-child(6n) {
-        background-color: rgb(180, 10, 47);
-      }
-
-      .swiper-slide:nth-child(7n) {
-        background-color: rgb(35, 99, 19);
-      }
-
-      .swiper-slide:nth-child(8n) {
-        background-color: rgb(0, 68, 255);
-      }
-
-      .swiper-slide:nth-child(9n) {
-        background-color: rgb(218, 12, 218);
-      }
-
-      .swiper-slide:nth-child(10n) {
-        background-color: rgb(54, 94, 77);
-      }
-    </style>
-  </head>
-
-  <body style="background-color: #151515;">
-    <!-- Swiper -->
-	<div id="swiper-container" style="display: block; color: white; text-align: center;">
-	<div id="content-heading" >
-		<h1 >NFJ Labs Gallery</h1>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat error laboriosam ut possimus perferendis sunt.</p>
+<body style="background-color: #151515;">
+	<!-- Swiper -->
+	<div id="swiper-container" style="display: block; color: white; text-align: center; overflow: hidden;">
+		<div id="content-heading" style="margin-top: 80px;">
+			<h1>NFJ Labs Gallery</h1>
+			<p>Image Gallery Of NFJ Labs</p>
+		</div>
+		<div class="swiper mySwiper" id="content-card">
+			<div class="swiper-wrapper">
+				<!-- <div class="swiper-slide">
+					<video width="320" height="240">
+						<source src="https://www.youtube.com/embed/iwiSv0bwuJE" type="video/mp4">
+					</video>
+				</div> -->
+				<div class="swiper-slide"><img src="./resources/images/gallery/1.jpeg" alt="galleryImages"></div>
+				<div class="swiper-slide"><img src="./resources/images/gallery/2.jpeg" alt="galleryImages"></div>
+				<div class="swiper-slide"><img src="./resources/images/gallery/3.jpeg" alt="galleryImages"></div>
+				<div class="swiper-slide"><img src="./resources/images/gallery/4.jpeg" alt="galleryImages"></div>
+				<div class="swiper-slide"><img src="./resources/images/gallery/5.jpeg" alt="galleryImages"></div>
+				<div class="swiper-slide"><img src="./resources/images/gallery/6.jpeg" alt="galleryImages"></div>
+				<div class="swiper-slide"><img src="./resources/images/gallery/7.jpg" alt="galleryImages"></div>
+				<div class="swiper-slide"><img src="./resources/images/gallery/8.jpg" alt="galleryImages"></div>
+			</div>
+		</div>
 	</div>
-    <div class="swiper mySwiper" id="content-card">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><video width="320" height="240" ><source src="https://www.youtube.com/embed/iwiSv0bwuJE" type="video/mp4"></video></div>
-        <div class="swiper-slide"><img src="./resources/images/marketplace.png" alt=""></div>
-        <div class="swiper-slide"><img src="./resources/images/metaverse.png" alt=""></div>
-        <div class="swiper-slide"><img src="./resources/images/plane.gif" alt=""></div>
-        <div class="swiper-slide"><img src="./resources/images/icons/necklace.png" alt=""></div>
-        <!-- <div class="swiper-slide"><img src="./resources/images/bg.webp" alt=""></div>
-        <div class="swiper-slide"><img src="./resources/images/bg.webp" alt=""></div>
-        <div class="swiper-slide"><img src="./resources/images/bg.webp" alt=""></div>
-        <div class="swiper-slide"><img src="./resources/images/bg.webp" alt=""></div>
-        <div class="swiper-slide"><img src="./resources/images/bg.webp" alt=""></div> -->
-		
-      </div>
-    </div>
+	<div id="swiper-container"
+		style="display: block; color: white; text-align: center; overflow: hidden; margin-bottom: 50px;">
+		<div id="content-heading" style="margin-top: 90px;">
+			<h1>NFJ Labs Videos</h1>
+			<p>Video Gallery Of NFJ Labs</p>
+		</div>
+		<div class="swiper mySwiper" id="content-card">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<video controls class="videoFit">
+						<source src="./resources/images/gallery/videos/Vicenza Video 1.mp4" type="video/mp4">
+					</video>
+				</div>
+				<div class="swiper-slide">
+					<video controls class="videoFit">
+						<source src="./resources/images/gallery/videos/Vicenza Video 2.mp4" type="video/mp4">
+					</video>
+				</div>
+				<div class="swiper-slide">
+					<video controls class="videoFit">
+						<source src="./resources/images/gallery/videos/Vicenza Video 3.mp4" type="video/mp4">
+					</video>
+				</div>
+				<div class="swiper-slide">
+					<video controls class="videoFit">
+						<source src="./resources/images/gallery/videos/Vicenza Video 4.mp4" type="video/mp4">
+					</video>
+				</div>
+				<div class="swiper-slide">
+					<video controls class="videoFit">
+						<source src="./resources/images/gallery/videos/Vicenza Video 5.mp4" type="video/mp4">
+					</video>
+				</div>
+				<div class="swiper-slide">
+					<video controls class="videoFit">
+						<source src="./resources/images/gallery/videos/Vicenza Video 6.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+		</div>
 	</div>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+	<div class="homeIcon" style="position: absolute; top:6%; left: 5%;" data-follow>
+		<a href="index">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+				<path fill="none" d="M0 0h24v24H0z" />
+				<path
+					d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8zm0-9h4v2h-4v3l-4-4 4-4v3z"
+					fill="rgba(255,255,255,1)" />
+			</svg>
+		</a>
+	</div>
 
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        effect: "cards",
-        grabCursor: true,
-      });
-    </script>
-  </body>
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+	<script>
+		var swiper = new Swiper(".mySwiper", {
+			effect: "cards",
+			grabCursor: true,
+		});
+	</script>
+</body>
+
 </html>
